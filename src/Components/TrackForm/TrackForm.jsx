@@ -30,7 +30,7 @@ const TrackForm = ({ setIsFormShown, setTracks, isSelected }) => {
 
             setIsFormShown(false)
         }
-         response = await index()
+        response = await index()
         setTracks(response.data)
 
     }

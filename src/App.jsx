@@ -45,6 +45,7 @@ const App = () => {
         handleFormShown={handleFormShown}
         handleSelect={handleSelect}
         setIsPlaying={setIsPlaying}
+        isPlaying={isPlaying}
       />
       {
         isPlaying

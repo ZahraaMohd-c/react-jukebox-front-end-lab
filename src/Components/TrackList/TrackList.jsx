@@ -28,8 +28,13 @@ const TrackList = (props) => {
                                 <p>{track.artist}</p>
 
                                 <button onClick={() => {
-                                    props.setIsPlaying(track)
-                                    
+                                    if(!props.isPlaying){
+                                        props.setIsPlaying(track)
+
+                                    }else{
+                                        props.setIsPlaying(null)
+                                    }
+
                                 }}>Play</button>
                                 <button onClick={() => {
                                     props.handleFormShown(track)
